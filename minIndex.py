@@ -1,4 +1,4 @@
-def minIndex(list,minI=0,Index=1):
+def minIndex(list,lowerBound,upperBound):
     '''
     Objective: to find the index of the minimum numbrer of the list
     Input Parameters:
@@ -9,16 +9,13 @@ def minIndex(list,minI=0,Index=1):
     '''
 
     #Approach: using recursion
-    if Index==len(list):
-        return minI
-    elif list[Index] > list[minI]:
-        return minIndex(list,minI,Index+1)
+    if upperBound==lowerBound:
+        return upperBound
+    elif list[upperBound] > list[lowerBound]:
+        return minIndex(list,lowerBound,upperBound-1)
     else:
-        return minIndex(list,Index,Index+1)
+        return minIndex(list,lowerBound+1,upperBound)
 
+list = [6,1,5,2,9,8]
 
-    
-list = [6,1,5,-76,2,9,8,-9,10,-27]
-
-print("Minimum in the list",minIndex(list))
-
+print("Minimum in the list",minIndex(list,0,5))
