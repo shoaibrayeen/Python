@@ -5,6 +5,7 @@ def computeModeratedMarks(file1, file2, addPercent):
   Return Value: None
   Side effect: A new file – file2 of moderated marks is produced
   '''
+  #Approach : file handling
 
   try:
     fIn = open(file1, 'r')
@@ -39,11 +40,13 @@ def computeModeratedMarks(file1, file2, addPercent):
 
 
 def main():
+  
   '''
   Objective: To compute moderated marks based on user input
   Input Parameter: None
   Return Value: None
   '''
+  #Approach : using computeModeratedMarks() function
   import sys
   sys.path.append('/home/administrator/Desktop/')
   #To compute moderated marks of students
