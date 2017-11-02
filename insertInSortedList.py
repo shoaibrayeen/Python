@@ -1,4 +1,4 @@
-def List(list,element,pos=0):
+def List(list,element,pos = 0):
      '''
      objective : To insert a number in sorted list
      Input parameters :
