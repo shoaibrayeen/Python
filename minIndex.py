@@ -16,6 +16,6 @@ def minIndex(list,lowerBound,upperBound):
     else:
         return minIndex(list,lowerBound+1,upperBound)
 
-list = [6,1,5,2,9,8]
+list = [6,1,5,2,9,8,-9,1]
 
-print("Minimum in the list",minIndex(list,0,5))
+print("Minimum in the list",minIndex(list,0,2))
