@@ -9,6 +9,6 @@ def MaxList(l):
    return []
  elif len(l)==1:
    return l[0]
- else
+ else:
    return Max(l[0],MaxList(l[1:])
   
