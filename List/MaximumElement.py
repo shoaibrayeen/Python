@@ -6,7 +6,7 @@ else:
   
 def MaxList(l):
  if l==[]:
-   return 'null'
+   return []
  elif len(l)==1:
    return l[0]
  else
