@@ -1,2 +1,1 @@
-# bmegha98
-code repository for python
+## Python codes for beginners
