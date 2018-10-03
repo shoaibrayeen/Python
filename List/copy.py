@@ -1,15 +1,15 @@
-def copy(lst1, lst2 = []):
+def copy(lst_1, lst_2 = []):
     '''
     Objective: To create copy of a list lst1
     Input Parameters: lst1, lst2 - list
     Return Value: lst2 - list
     '''
-    if lst1==[]:
-        return lst2
+    if lst_1==[]:
+        return lst_2
     else:
-        lst2.append(lst1[0])
-        copy(lst1[1:], lst2)
-    return lst2
+        lst_2.append(lst_1[0])
+        copy(lst_1[1:], lst_2)
+    return lst_2
 
 def main():
     '''
