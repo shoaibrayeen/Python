@@ -1,4 +1,4 @@
-def toUpper(file1 , file2):
+def toUpper(file_1 , file_2):
   '''
   Objective: To convert the contents of file to upperCase and save it another file
   Input Parameters:
@@ -10,8 +10,8 @@ def toUpper(file1 , file2):
   #Approach : file handling
 
   try:
-    fIn = open(file1, 'r')
-    fOut = open(file2,'w')
+    fIn = open(file_1, 'r')
+    fOut = open(file_2,'w')
   except IOError:
     print('Problem in opening the file');
     sys.exit()
