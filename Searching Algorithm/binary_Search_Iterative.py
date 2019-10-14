@@ -5,8 +5,8 @@ def binarySearch(lst, searchValue):
     Input Parameters: lst - sorted list, searchValue - any type
     Return Value: Index of the matched element, if searchValue is
                   found, None otherwise
-    Assumption: List is sorted in increasing order
     '''
+    lst = sorted(lst)
     low, high = 0, len(lst) - 1
     while low <= high:
         mid = int((low + high)/2)
