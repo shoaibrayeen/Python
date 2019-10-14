@@ -16,6 +16,9 @@ def max3(n1, n2, n3):
             return n2
     return max2(max2(n1, n2), n3)
 
+def fast_max(n1, n2, n3):
+    return max([n1, n2, n3])
+
 def main():
     '''
     Objective: To find maximum of three numbers provided as input
@@ -26,8 +29,10 @@ def main():
     n1 = int(input('Enter first number: '))
     n2 = int(input('Enter second number: '))
     n3 = int(input('Enter third number: '))
-    maximum = max3(n1, n2, n3)
-    print('Maximum number is', maximum)
+    maximum1 = max3(n1, n2, n3)
+    print('Maximum number is', maximum1)
+    maximum2 = fast_max(n1, n2, n3)
+    print('Maximum number is', maximum2)
 
 if __name__=='__main__':
     main()
