@@ -1,2 +1,0 @@
-
-# Python codes for beginners
