@@ -1,2 +1,2 @@
 
-## This repository contains solutions for problems coded in Python.
+This repository contains solutions for problems in Python.
